@@ -15,10 +15,6 @@ class BooksModelView(TemplateView):
 		return context
 
 class BookList(ListView):
-	def __init__(self):
-		super(BookList, self).__init__()
-		print('a')
-
 	model = Book
 
 class AuthorList(ListView):
@@ -36,10 +32,3 @@ class AuthorDetail(DetailView):
 
 class PublisherDetail(DetailView):
 	model = Publisher
-
-class ClassName(object):
-	"""docstring for ClassName"""
-	def __init__(self, arg):
-		super(ClassName, self).__init__()
-		self.arg = arg
-		
